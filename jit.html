@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jit Paul | Deployment Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Jit Paul</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="toggleTheme">🌙</button>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>AWS-focused DevOps/Cloud Engineer with 2.9 years’ experience provisioning and automating cloud infrastructure using Terraform, Jenkins, and AWS services...</p>
+        <a href="jitPaul_Resume.pdf" download class="resume-btn">Download Resume</a>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skill">
+            <span>AWS</span>
+            <div class="skill-bar"><div style="width: 90%"></div></div>
+        </div>
+        <div class="skill">
+            <span>Jenkins / CI-CD</span>
+            <div class="skill-bar"><div style="width: 85%"></div></div>
+        </div>
+        <div class="skill">
+            <span>Terraform</span>
+            <div class="skill-bar"><div style="width: 80%"></div></div>
+        </div>
+        <div class="skill">
+            <span>Docker</span>
+            <div class="skill-bar"><div style="width: 70%"></div></div>
+        </div>
+        <div class="skill">
+            <span>Linux</span>
+            <div class="skill-bar"><div style="width: 85%"></div></div>
+        </div>
+        <div class="skill">
+            <span>Python / Groovy / YAML</span>
+            <div class="skill-bar"><div style="width: 65%"></div></div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Deployment Engineer (DevOps) | Hashcash Consultants</h3>
+                <span>June 2024 – Present</span>
+                <ul>
+                    <li>Provisioned AWS infrastructure (EC2, VPC, RDS, IAM, ELB, Route 53), achieving 99.9% uptime.</li>
+                    <li>Automated CI/CD pipelines with Jenkins, reducing deployment failures by 30%.</li>
+                    <li>Created Lambda-based automation for Security Group management, saving ~10 hours/week.</li>
+                    <li>Implemented Terraform templates, reducing environment setup time by 40%.</li>
+                    <li>Configured CloudWatch monitoring and alerts, detecting 95% of critical issues proactively.</li>
+                </ul>
+            </div>
+            <div class="timeline-item">
+                <h3>Software Engineer | Wiz Digital Service</h3>
+                <span>Oct 2022 – June 2023</span>
+                <ul>
+                    <li>Managed AWS infrastructure and application support via Jira ITSM, 95% on-time resolution.</li>
+                    <li>Resolved L1 incidents across server, network, and application layers.</li>
+                    <li>Configured CloudWatch monitoring for proactive detection of critical issues.</li>
+                </ul>
+            </div>
+            <div class="timeline-item">
+                <h3>Software Engineer Trainee | Amzur Technology Inc.</h3>
+                <span>June 2021 – Oct 2021</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Key Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Automated Security Group Management</h3>
+                <p>Built Lambda + EventBridge automation to eliminate 100% of manual VPN revocations, improving security workflow by 75%.</p>
+            </div>
+            <div class="project-card">
+                <h3>Terraform Infrastructure Setup</h3>
+                <p>Implemented reusable Terraform templates to provision EC2, RDS, IAM, and VPC, reducing setup time by 40%.</p>
+            </div>
+            <div class="project-card">
+                <h3>Email Migration to Zoho Workspace</h3>
+                <p>Migrated 70+ users from Google Workspace to Zoho, configuring DNS (MX/SPF/DKIM) with zero downtime.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p><strong>Phone:</strong> 7980062927</p>
+        <p><strong>Email:</strong> <a href="mailto:jeetpaul474@gmail.com">jeetpaul474@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jit-paul/" target="_blank">linkedin.com/in/jit-paul/</a></p>
+    </section>
+
+    <footer>
+        <p>© 2026 Jit Paul. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Dark / Light Mode Toggle
+        const toggleBtn = document.getElementById('toggleTheme');
+        toggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            toggleBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+        });
+    </script>
+</body>
+</html>
