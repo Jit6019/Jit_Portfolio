@@ -84,7 +84,7 @@ body.dark-mode section {
     background-color: #005a8d;
 }
 
-/* Skills bars */
+/* Skills bars
 .skill {
     margin: 1rem 0;
 }
@@ -103,8 +103,8 @@ body.dark-mode section {
 .skill-bar div {
     height: 15px;
     background: #b12300;
-    border-radius: 5px;
-}
+    border-radius: 5px; */
+/* } */
 
 body.dark-mode .skill-bar div {
     background: #4fa6f7;
